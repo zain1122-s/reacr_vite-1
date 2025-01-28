@@ -1,7 +1,8 @@
-function heading3() {
+function heading3(heading) {
     return
-    {
+    (
     <h3>heelo world</h3>
-    }
+    )
 }
-console.log(heading3);
+
+export default app

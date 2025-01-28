@@ -1,12 +1,12 @@
-import heading3 from ({heading})
-function card (){
+import Heading3 from "./heading1"
+function Card ({heading}){
     return (
         <>
-        <heading3 heading = {"hello i am heading"}/>
+        <Heading3 heading = {"hello i am heading"}/>
         <p>Lorem ipsum dolor sit.</p>
         </>
     )
 }
 
 
-export default card
+export default Card

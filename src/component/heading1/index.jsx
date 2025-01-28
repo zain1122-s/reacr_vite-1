@@ -1,8 +1,8 @@
-function heading3(heading) {
+function Heading3({heading}) {
     return
     (
-    <h3>heelo world</h3>
+    <h3>{heading}</h3>
     )
 }
 
-export default app
+export default Heading3

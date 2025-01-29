@@ -1,6 +1,6 @@
-function Button(btn) {
+function Button(button) {
     return (
-        <button>{btn}</button>
+        <button>login</button>
     
     )
 }

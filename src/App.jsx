@@ -6,8 +6,11 @@ function App() {
     <>
 
     <H3 heading= {"hi there!"}/>
-  <Card crd ={"information"}/>
-  <Button btn={"login"}/>
+  <Card ul={"home"}/>
+  <Card ul={"about"}/>
+  <Card ul={"detail"}/>
+  <Button />
+
   
 </>
   )

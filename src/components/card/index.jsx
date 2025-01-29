@@ -1,7 +1,7 @@
-function Card({crd}) {
+function Card({ul}) {
     return (
         <ul>
-            <li>{crd}</li>
+            <li>{ul}</li>
         </ul>
         
     )

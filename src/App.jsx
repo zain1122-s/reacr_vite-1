@@ -1,14 +1,15 @@
-// import Heading3 from "./component/heading1"
-// import Card from "./component/card"
+import H3 from "./components/heading3"
+import Card from "./components/card"
+import Button  from "./components/button"
+function App() {
+  return (
+    <>
 
-import Card from "./component/card"
-function app() {
-  return(
-  <>
-<Card/>
-
-  </>
+    <H3 heading= {"hi there!"}/>
+  <Card crd ={"information"}/>
+  <Button btn={"login"}/>
+  
+</>
   )
 }
-
-export default app 
+export default App

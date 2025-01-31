@@ -1,10 +1,9 @@
-function Card({ul}) {
+function Card() {
     return (
         <>
-        <ul>
-            <li>{ul}</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, similique.</p>
+        
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, doloremque.</p>
+        
         </>
         
     )

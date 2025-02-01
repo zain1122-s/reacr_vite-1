@@ -1,6 +1,7 @@
 function H3({heading}) {
     return(
-        <div className="cards">
+
+        <div className="cards" >
     
         <h3>{heading} </h3>
     </div>

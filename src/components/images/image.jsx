@@ -6,9 +6,11 @@ function ImageComp({bgImg1}){
    
    <div className="image-container">
       <img src={bgImg1} className="img1" />
+      
    </div>
    </>
    ) 
 }
+
 
 export default ImageComp

@@ -1,3 +1,48 @@
+.container{
+background-color: rgb(219, 255, 243);
+height: 500px;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+}
 .cards{
-    background-color: red;
+    margin-left: 300px;
+
+}
+.para{
+    margin-left: 300px;
+    font-size: 18px;
+}
+
+.hd1{
+    font-size: 25px;
+}
+
+.button{
+    background-color: rgb(107, 175, 240);
+    padding: 15px;
+    margin: 15px;
+    border: none;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 300px;
+}
+
+.body{
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.pra{
+    margin-left: 200px;
+    color: gray;
+}
+
+.data{
+    display:  flex;
+    margin-left: 100px;
+    margin-top: 80px;
+    color: rgb(107, 175, 240);
 }

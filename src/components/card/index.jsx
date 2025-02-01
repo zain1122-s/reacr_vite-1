@@ -1,12 +1,12 @@
 
 
-function Card() {
+function Card({para}) {
 
 
     return(
         <>
         
-    <p className="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat itaque quam ab  consequatur quisquam sae <br /> sequi fugit adipisci doloribus? Nobis sequi quo impedit! Omnis  perspiciatis sit beatae.</p>
+    <p className="para">{para}</p>
     </>
     )
 }

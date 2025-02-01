@@ -1,12 +1,13 @@
-function H3({heading}) {
+
+function H1({heading}) {
     return(
-   <center>
+   
         <div className="cards" >
     
-        <h3>{heading} </h3>
+        <h1>{heading} </h1>
     </div>
-     </center>
+    
     )
 
 }
-export default H3
+export default H1

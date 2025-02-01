@@ -1,4 +1,4 @@
-import H3 from "./components/heading3"
+import H1 from "./components/heading3"
 import Card from "./components/card"
 
 import Button from "./components/button"
@@ -6,9 +6,11 @@ import Button from "./components/button"
 function App() {
   return (
     <>
-    <H3 heading= {"The modern landing  page  for react developer"}/>
-    <Card/>
+    
+    <H1 heading= {"The modern landing  page  for react developer"}/>
+    <Card />
     <Button/>
+    
 </>
   )
 }

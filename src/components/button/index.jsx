@@ -1,7 +1,8 @@
+
 function Button() {
    
     return(
-        <button className="button" >login</button>
+        <button className="button" >start your 14-days free trial</button>
     )
 }
 

@@ -1,8 +1,8 @@
-function Button(button) {
-    return (
-        <button>login</button>
-    
+function Button() {
+   
+    return(
+        <button className="button" >login</button>
     )
 }
 
-export default Button 
+export default Button

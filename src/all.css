@@ -1,4 +1,5 @@
-.container{
+
+ .container{
 background-color: rgb(219, 255, 243);
 height: 500px;
 background-attachment: fixed;
@@ -45,4 +46,47 @@ justify-content: center;
     margin-left: 100px;
     margin-top: 80px;
     color: rgb(107, 175, 240);
+}
+
+.footer{
+    background-color: rgb(219, 255, 243);
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+.ma1{
+    color: gray;
+    margin-left: 600px;
+
+}
+
+.ma2{
+    margin-left: 570PX;
+    
+}
+.ma3{
+    margin-left: 200px
+}
+.box1{
+    background-color: white;
+width: 500px;
+  
+}
+.box2{
+    background-color: white;
+    width: 500px;
+  
+}
+.box3{
+    background-color: white;
+    width: 500px;
+    height: 200px;
+  
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+
+   
 }

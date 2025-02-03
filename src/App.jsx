@@ -2,6 +2,8 @@ import H1 from "./components/heading3";
 import Card from "./components/card";
 import Button from "./components/button";
 import "./all.css";
+import UseStateComp from "./components/hooks/usestate";
+
 function App() {
   return (
     <>
@@ -75,6 +77,12 @@ function App() {
             <Card para="rem shah Lorem ipsum dolor, sit amet" />
           </div>
         </div>
+      </div>
+
+
+
+      <div className="div">
+        <UseStateComp/>
       </div>
     </>
   );

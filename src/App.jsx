@@ -55,26 +55,25 @@ function App() {
           <H1 heading={"feature"} />
         </div>
         <div className="ma2">
-        <H1 heading={"your title here"} />
+          <H1 heading={"your title here"} />
         </div>
         <div className="ma3">
-          <Card para="rem shah Lorem ipsum dolor, sit amet consectetur adipisci doloribus? Nobis sequi quo impedit! adipisicing elit. Fugiat itaque quam a"/>
+          <Card para="rem shah Lorem ipsum dolor, sit amet consectetur adipisci doloribus? Nobis sequi quo impedit! adipisicing elit. Fugiat itaque quam a" />
         </div>
-        
+
         <div className="box">
           <div className="box1">
-            <H1 heading="your title"/>
-            <Card para="rem shah Lorem ipsum dolor, sit amet"/>
+            <H1 heading="your title" />
+            <Card para="rem shah Lorem ipsum dolor, sit amet" />
           </div>
           <div className="box2">
-            <H1  heading="your title"/>
-            <Card para="rem shah Lorem ipsum dolor, sit amet"/>
+            <H1 heading="your title" />
+            <Card para="rem shah Lorem ipsum dolor, sit amet" />
           </div>
           <div className="box3">
-            <H1 heading="your title"/>
-            <Card para="rem shah Lorem ipsum dolor, sit amet"/>
+            <H1 heading="your title" />
+            <Card para="rem shah Lorem ipsum dolor, sit amet" />
           </div>
-          
         </div>
       </div>
     </>

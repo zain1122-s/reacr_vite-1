@@ -6,7 +6,7 @@ function H1({heading}) {
         <div className="cards" >
     
         <h1 className='hd1'>{heading} </h1>
-        
+       
     </div>
 
     </>
@@ -14,3 +14,4 @@ function H1({heading}) {
 
 }
 export default H1
+ 

@@ -1,28 +1,27 @@
-import { useState } from "react"
+ import { useState } from "react"
 
-function UseStateComp() {
+function Counter() {
 
-    const [state , setState] = useState({
-        name: "shahzain",
-        age: 20,
-        course:  "basic_js"
-    })
+    const [count , setCount] = useState(0)
 
-    const handleChangeName = ()=>{
-        console.log("clicked");
-        setState({...state, course: "advance js"})
-        setState({...state, age:"30"})
-        setState({...State, name:"ehsan ali" })
+    const handleIncrement = ()=>{
+        setCount(count + 1)
+    };
+    const handleDecrement = ()=>{
+        setCount(count - 1)
+    };
+    const handelreset = ()=>{
+        setCount(count-count)
     }
     return(
 
         <>
-        <h3>person info </h3>
-        <button onClick={handleChangeName}>change name </button>
-            <p> {state.name}</p>
-            <p> {state.age}</p>
-            <p> {state.course}</p>
+        
+        <h3>counter : {count}</h3>
+        <button onClick={handleIncrement}>increment</button>
+        <button onClick={handleDecrement}>decrement</button>
+        <button onClick={handelreset}>reset</button>
         </>
     )
 }
-export default UseStateComp
+export default Counter

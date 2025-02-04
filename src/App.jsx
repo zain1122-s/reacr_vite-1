@@ -1,13 +1,13 @@
-import H1 from "./components/heading3";
-import Card from "./components/card";
-import Button from "./components/button";
-import "./all.css";
-import UseStateComp from "./components/hooks/usestate";
+// import H1 from "./components/heading3";
+// import Card from "./components/card";
+// import Button from "./components/button";
+// import "./all.css";
+import Counter from "./components/hooks/usestate";
 
 function App() {
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <H1 heading={"The modern landing  page  for react developer"} />
         <Card
           para={
@@ -77,12 +77,14 @@ function App() {
             <Card para="rem shah Lorem ipsum dolor, sit amet" />
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
       <div className="div">
-        <UseStateComp/>
+        
+        <h1> react counter</h1>
+        <Counter/>
       </div>
     </>
   );

@@ -6,7 +6,8 @@ background-attachment: fixed;
 display: flex;
 flex-direction: column;
 justify-content: center;
-
+width: 1800px;
+margin-left: 30px;
 
 }
 .cards{

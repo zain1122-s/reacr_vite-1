@@ -91,5 +91,59 @@ width: 500px;
 
    
 
+
 }
 
+/* .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+ 
+
+
+.div{
+
+    background-color: black;
+    height: 900px;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+} 
+.h1{
+    color: red;
+    margin-left: 200px;
+    
+}
+.heading{
+    color: white;
+    margin-left:230px;
+    font-size: 30px;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+    
+    margin-left: 60px;
+}
+.btn1 {
+    margin: 20px;
+    background-color: red;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+
+    
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+   border: 1px solid rgb(171, 102, 102);
+   height: 500px;
+   width: 600px;
+   justify-content: space-evenly;
+
+}

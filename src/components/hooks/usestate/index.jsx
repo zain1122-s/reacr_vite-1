@@ -1,27 +1,40 @@
- import { useState } from "react"
+import { useState , useEffect } from "react";
 
 function Counter() {
+  const [count, setCount] = useState(0);
+  const[data, setdata]=useState
 
-    const [count , setCount] = useState(0)
-
-    const handleIncrement = ()=>{
-        setCount(count + 1)
-    };
-    const handleDecrement = ()=>{
-        setCount(count - 1)
-    };
-    const handelreset = ()=>{
-        setCount(count-count)
-    }
-    return(
-
-        <>
-        
-        <h3>counter : {count}</h3>
-        <button onClick={handleIncrement}>increment</button>
-        <button onClick={handleDecrement}>decrement</button>
-        <button onClick={handelreset}>reset</button>
-        </>
-    )
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+  const handleDecrement = () => {
+    setCount(count - 1);
+  };
+  const handelreset = () => {
+    setCount(count - count);
+  };
+   useEffect(()=>{
+    console.log("component mount");
+    
+   }, [])
+  return (
+    <>
+      <div className="first">
+        <h3 className="heading">counter : {count}</h3>
+        <div className="btn">
+          <button className="btn1" onClick={handleIncrement}>
+            increment
+          </button>
+          <button className="btn1" onClick={handleDecrement}>
+            decrement
+          </button>
+          <button className="btn1   " onClick={handelreset}>
+            reset
+          </button>
+          <button o nClick>update data</button>
+        </div>
+      </div>
+    </>
+  );
 }
-export default Counter
+export default Counter;

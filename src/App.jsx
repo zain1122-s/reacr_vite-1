@@ -1,7 +1,7 @@
 // import H1 from "./components/heading3";
 // import Card from "./components/card";
 // import Button from "./components/button";
-// import "./all.css";
+import "./all.css";
 import Counter from "./components/hooks/usestate";
 
 function App() {
@@ -83,8 +83,10 @@ function App() {
 
       <div className="div">
         
-        <h1> react counter</h1>
+        <div className="div1">
+        <h1 className="h1"> react counter</h1>
         <Counter/>
+        </div>
       </div>
     </>
   );

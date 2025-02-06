@@ -1,3 +1,4 @@
+import { faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons'
 import './style.css'
 
 function H1({heading}) {

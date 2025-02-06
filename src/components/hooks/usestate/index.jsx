@@ -1,9 +1,7 @@
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
-  const[data, setdata]=useState
-
   const handleIncrement = () => {
     setCount(count + 1);
   };
@@ -13,10 +11,7 @@ function Counter() {
   const handelreset = () => {
     setCount(count - count);
   };
-   useEffect(()=>{
-    console.log("component mount");
-    
-   }, [])
+
   return (
     <>
       <div className="first">
@@ -28,10 +23,9 @@ function Counter() {
           <button className="btn1" onClick={handleDecrement}>
             decrement
           </button>
-          <button className="btn1   " onClick={handelreset}>
+          <button className="btn1" onClick={handelreset}>
             reset
           </button>
-          <button o nClick>update data</button>
         </div>
       </div>
     </>

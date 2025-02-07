@@ -9,9 +9,20 @@ function Counter() {
     setCount(count - 1);
   };
   const handelreset = () => {
-    setCount(count - count);
+    setCount(0);
   };
-
+  useEffect( () => {
+    console.log("inside useeffect");
+    
+    return function (){
+      console.log("unmount counter");
+      
+    }
+  },[]);
+  useEffect(() =>{
+  console.log("user update count");
+  
+  }, [count])
   return (
     <>
       <div className="first">

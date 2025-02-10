@@ -7,7 +7,7 @@ import Counter from "./components/hooks/usestate";
 function App() {
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <H1 heading={"The modern landing  page  for react developer"} />
         <Card
           para={
@@ -32,8 +32,8 @@ function App() {
             }
           />
         </div>
-      </div>
-      <div className="data">
+      </div> */}
+      {/* <div className="data">
         <div className="f1">
           <H1 heading={"$5000k+"} />
           <Card para={"revenur"} />
@@ -77,7 +77,7 @@ function App() {
             <Card para="rem shah Lorem ipsum dolor, sit amet" />
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 

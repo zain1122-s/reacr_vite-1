@@ -19,6 +19,11 @@ function Counter() {
       
     }
   },[]);
+  useEffect(() => {
+    console.log(`count variable ${count}`);
+    document.title = `count ${count}`
+    
+  })
   useEffect(() =>{
   console.log("user update count");
   

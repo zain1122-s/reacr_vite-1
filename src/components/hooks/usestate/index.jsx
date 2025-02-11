@@ -21,7 +21,7 @@ function Counter() {
   },[]);
   useEffect(() => {
     console.log(`count variable ${count}`);
-    document.title = `count ${count}`
+    document.title = `updating ${count}`
     
   })
   useEffect(() =>{

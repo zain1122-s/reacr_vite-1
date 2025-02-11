@@ -3,7 +3,7 @@ import Card from "./components/card";
 import Button from "./components/button";
 import "./all.css";
 import Counter from "./components/hooks/usestate";
-
+import CounterRed from "./components/hooks/useReducer";
 
 function App() {
   return (
@@ -33,8 +33,8 @@ function App() {
             }
           />
         </div>
-      </div> */}
-      {/* <div className="data">
+      </div>
+      <div className="data">
         <div className="f1">
           <H1 heading={"$5000k+"} />
           <Card para={"revenur"} />
@@ -78,7 +78,7 @@ function App() {
             <Card para="rem shah Lorem ipsum dolor, sit amet" />
           </div>
         </div>
-      </div> */}
+      </div>
 
 
 
@@ -88,6 +88,9 @@ function App() {
         <h1 className="h1"> react counter</h1>
         <Counter/>
         </div>
+      </div> */}
+      <div>
+        <CounterRed/>
       </div>
     </>
   );

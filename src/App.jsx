@@ -4,9 +4,11 @@ import Button from "./components/button";
 import "./all.css";
 import Counter from "./components/hooks/usestate";
 import CounterRed from "./components/hooks/useReducer";
+
 function App() {
   return (
     <>
+     
       {/* <div className="container">
         <H1 heading={"The modern landing  page  for react developer"} />
         <Card
@@ -88,9 +90,10 @@ function App() {
         <Counter/>
         </div>
       </div> */}
-      <div>
+      {/* <div>
         <CounterRed/>
-      </div>
+      </div> */}
+      
     </>
   );
 }

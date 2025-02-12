@@ -4,7 +4,6 @@ import Button from "./components/button";
 import "./all.css";
 import Counter from "./components/hooks/usestate";
 import CounterRed from "./components/hooks/useReducer";
-
 function App() {
   return (
     <>

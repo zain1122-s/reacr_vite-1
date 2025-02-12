@@ -1,12 +1,5 @@
-import React, { useReducer } from 'react';	
- 
-const student =[
-    {name: "shahzain", marks:[45, 80,30,90]},
-    {name: "zain", marks:[77, 50,80,40]},
-    {name: "ehsan", marks:[33, 20,70,90]},
-    {name: "sartaj", marks:[35, 33,20,100]}
-    
-]
+import React, { useReducer } from 'react'
+
 const initialstate = 45
 const reducer = (marks, action)=>{
 switch(action){

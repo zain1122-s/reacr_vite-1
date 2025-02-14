@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function FetchingApi() {
     const [post, setPost] = useState([]);
@@ -20,10 +20,6 @@ function FetchingApi() {
                 setError(error.message);
             });
     };
-
-    useEffect(() => {
-        fetchPosts();
-    }, []);
 
     return (
         <>

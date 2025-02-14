@@ -8,9 +8,14 @@ import PostApiExample from "./components/hooks/Fetchapi";
 import FetchingApi from "./components/hooks/FetchingApi";
 import UseCallBackComp from "./components/useCallBack/callback";
 import { useCallback, useState } from "react";
+import UseMemocomp from "./components/usemamo/usemamo";
+
+
+
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
- 
+  // const [password, setPassword] = useState(false);
+
   const loginForm = useCallback((email , password) => {
     if (email === "example@gmail.com" && password === "1234") {
       alert("login successfully!");
@@ -23,8 +28,10 @@ function App() {
   return (
     <>
       <div>
-        {/* <FetchingApi/> */}
-        <UseCallBackComp loggedIn={loginForm}  />
+        { <FetchingApi/> }
+        <UseCallBackComp loggedIn={loginForm} password={loginForm}  />
+
+        <UseMemocomp/>
       </div>
     </>
   );

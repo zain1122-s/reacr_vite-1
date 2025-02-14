@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+
+
 function UseCallBackComp({loggedIn}) {
   const [email, setEmail] = useState("");
   const [password, setPasssword] = useState("");
@@ -8,14 +10,15 @@ function UseCallBackComp({loggedIn}) {
 const handleSubmit = (e) =>{
     console.log("submitted");
     e.preventDefault();
-    loggedIn(email)
+    loggedIn(email , password)
     setEmail("")
+    setPasssword("")
 }
 
   return (
     <>
-      <h2>useCallBack hook example</h2>
-      <form onSubmit={handleSubmit}>
+      <h2 className="head" style={{color:"red", marginLeft:"40%"}  }>useCallBack hook </h2>
+      <form onSubmit={handleSubmit} style={{marginLeft:"35%", display:"flex", flexDirection:"column", width:"400px",gap:"15px", marginTop:"100px"}}>
         <label>Email:</label>
         <input
           style={{ margin: "0 5px" }}
@@ -31,6 +34,8 @@ const handleSubmit = (e) =>{
         onChange={(e)=> setPasssword(e.target.value)}
         
         />
+        
+        
         <button type="submit">Login Form</button>
       </form>
     </>

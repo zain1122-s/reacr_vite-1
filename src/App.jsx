@@ -10,6 +10,7 @@ import UseCallBackComp from "./components/hooks/useCallBack/callback";
 import { useCallback, useState } from "react";
 import UseMemocomp from "./components/hooks/usemamo/usemamo";
 import UseId from "./components/hooks/useid/useid";
+import UseRef from "./components/hooks/UseRef/UseRef";
 
 
 
@@ -42,6 +43,7 @@ function App() {
 
         <UseMemocomp/> 
         <UseId/>
+        <UseRef/>
       </div>
 
     </>

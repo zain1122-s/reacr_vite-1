@@ -5,14 +5,17 @@ import { useState } from "react";
 function UseCallBackComp({loggedIn}) {
   const [email, setEmail] = useState("");
   const [password, setPasssword] = useState("");
+  const [ageGroup, setAgeGroup] = useState("");
 
 
 const handleSubmit = (e) =>{
     console.log("submitted");
     e.preventDefault();
-    loggedIn(email , password)
+    
+    loggedIn(email , password, ageGroup)
     setEmail("")
     setPasssword("")
+    setAgeGroup("")
 }
 
   return (
@@ -34,7 +37,27 @@ const handleSubmit = (e) =>{
         onChange={(e)=> setPasssword(e.target.value)}
         
         />
+         <label>Age Group:</label>
         
+          <label>
+            <input
+              type="radio"
+              value="18Plus"
+              checked={ageGroup === "18Plus"}
+              onChange={(e) => setAgeGroup(e.target.value)}
+
+            />
+            18+
+          </label>
+          <label>
+            <input
+              type="radio"
+              value="lessThan18"
+              checked={ageGroup === "lessThan18"}
+              onChange={(e) => setAgeGroup(e.target.value)}
+            />
+            Less than 18
+          </label>
         
         <button type="submit">Login Form</button>
       </form>

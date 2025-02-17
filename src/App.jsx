@@ -17,12 +17,20 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   // const [password, setPassword] = useState(false);
 
-  const loginForm = useCallback((email , password) => {
-    if (email === "shahzainalam@gmail.com" && password === "1234") {
+  const loginForm = useCallback((email , password , ageGroup) => {
+    
+
+    if (email === "shahzainalam@gmail.com" && password === "1234" && ageGroup === "18Plus" ) 
+
+      {
+        console.log(ageGroup);
+        
       alert("you login succesfully!");
-    } else {
+    } 
+    else {
       alert("password or email is incorrect");
     }
+
   }, []);
   
 
@@ -30,7 +38,7 @@ function App() {
     <>
       <div>
            <FetchingApi/>  
-        <UseCallBackComp loggedIn={loginForm} password={loginForm}  /> 
+        <UseCallBackComp loggedIn={loginForm} password={loginForm} ageGroup={loginForm} /> 
 
         <UseMemocomp/> 
         <UseId/>

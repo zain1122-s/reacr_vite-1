@@ -6,9 +6,10 @@
 // import CounterRed from "./components/hooks/useReducer";
 import PostApiExample from "./components/hooks/Fetchapi";
 import FetchingApi from "./components/hooks/FetchingApi";
-import UseCallBackComp from "./components/useCallBack/callback";
+import UseCallBackComp from "./components/hooks/useCallBack/callback";
 import { useCallback, useState } from "react";
-import UseMemocomp from "./components/usemamo/usemamo";
+import UseMemocomp from "./components/hooks/usemamo/usemamo";
+import UseId from "./components/hooks/useid/useid";
 
 
 
@@ -17,10 +18,10 @@ function App() {
   // const [password, setPassword] = useState(false);
 
   const loginForm = useCallback((email , password) => {
-    if (email === "example@gmail.com" && password === "1234") {
-      alert("login successfully!");
+    if (email === "shahzainalam@gmail.com" && password === "1234") {
+      alert("you login succesfully!");
     } else {
-      alert("invalid email!!");
+      alert("password or email is incorrect");
     }
   }, []);
   
@@ -28,11 +29,13 @@ function App() {
   return (
     <>
       <div>
-        { <FetchingApi/> }
-        <UseCallBackComp loggedIn={loginForm} password={loginForm}  />
+           <FetchingApi/>  
+        <UseCallBackComp loggedIn={loginForm} password={loginForm}  /> 
 
-        <UseMemocomp/>
+        <UseMemocomp/> 
+        <UseId/>
       </div>
+
     </>
   );
 }

@@ -10,40 +10,40 @@ import UseCallBackComp from "./components/hooks/useCallBack/callback";
 import { useCallback, useState } from "react";
 import UseMemocomp from "./components/hooks/usemamo/usemamo";
 import UseId from "./components/hooks/useid/useid";
-import UseRef from "./components/hooks/UseRef/UseRef";
+import UseRef from "./components/hooks/useref";
 
 
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
-  // const [password, setPassword] = useState(false);
+  // const [loggedIn, setLoggedIn] = useState(false);
+  // // const [password, setPassword] = useState(false);
 
-  const loginForm = useCallback((email , password , ageGroup) => {
+  // const loginForm = useCallback((email , password , ageGroup) => {
     
 
-    if (email === "shahzainalam@gmail.com" && password === "1234" && ageGroup === "18Plus" ) 
+  //   if (email === "shahzainalam@gmail.com" && password === "1234" && ageGroup === "18Plus" ) 
 
-      {
-        console.log(ageGroup);
+  //     {
+  //       console.log(ageGroup);
         
-      alert("you login succesfully!");
-    } 
-    else {
-      alert("password or email is incorrect");
-    }
+  //     alert("you login succesfully!");
+  //   } 
+  //   else {
+  //     alert("password or email is incorrect");
+  //   }
 
-  }, []);
+  // }, []);
   
 
   return (
     <>
       <div>
-           <FetchingApi/>  
+           {/* <FetchingApi/>  
         <UseCallBackComp loggedIn={loginForm} password={loginForm} ageGroup={loginForm} /> 
 
         <UseMemocomp/> 
-        <UseId/>
-        <UseRef/>
+        <UseId/> */}
+     <UseRef/>
       </div>
 
     </>
